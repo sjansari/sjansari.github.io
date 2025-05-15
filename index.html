@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-<title>SIVU</title> 
+<title>ETUSIVU</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<!-- Ulkoinen CSS-tiedosto -->
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome - kirjaston linkki -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body> 
-<h1>KHONEGI CATREING</h1> 
-<H2></H2>
-<p>Khonegi tarjoa persialaisia kotitekoisia catering palveluita Helsingissä, Espoossa ja Vantaalla</p>
-<p>Ruoat valmistetaan rakkaudella laadukkaista ja tuoreista raaka-aineista.</p> 
-<p>Hyvän maun lisäksi panostamme tarjoilutapaan, jotta asikkaat saisivat miellyttäviä yhdessäolon kokemuksia.</p>
-<p>Asiakkamme voivat löytää erikoisruokia, joita harvoin tarjotaan ravintolossa ja vielä sopivaan hintaaan.</p>
+<!--Sivuston yläosa (header)-->
+<header class="site-header">
+         
+<div class= "container">
+<!-- Sivuston logo -->
+<img src="logo.jpeg" alt="Logo" class="logo">
+</div>
+<!-- Hampurilaisvalikon kuvake Font Awesomesta -->
+<div id="hamburger">
+<i class="fas fa-bars"></i>
+</div>
+                
+<nav id="nav-menu" class="nav-menu"> 
+    <ul>
+    <li><a href="index.html">Khonegi catering</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="yhteys.html">Yhteystiedot</a></li>
+    </ul>
+               
+</nav>
+</header>
 
+<!--Sivun pääsisältö-->
 
+<h1 class="otsikko">KHONEGI CATREING</h1> 
+
+<img src="Etusivukuva.jpeg" alt="Bannerikuva" class="big-image">
+
+<button class="cta-button">Tilaa catering </button>
+
+<p class="teksti">
+    
+    Khonegi tarjoa persialaisia kotitekoisia catering palveluita Helsingissä, Espoossa ja Vantaalla. Ruoat valmistetaan rakkaudella laadukkaista ja tuoreista raaka-aineista.Hyvän maun lisäksi panostamme tarjoilutapaan, jotta asiakkaat saisivat miellyttäviä yhdessäolon kokemuksia.</p>
+
+<p class="teksti">
+
+    Asiakkaamme voivat löytää erikoisruokia, joita harvoin tarjotaan ravintoloissa – ja vielä sopivaan hintaan. Meiltä voi tilata helposti alkuruoat, pääruoat ja jälkiruoat useammalle hengelle. Palvelemme monenlaisia perhejuhlia ja tapahtumia.</p>
+
+<!--Sivuston alatunnuiste (footer)-->
+
+<footer class="site-footer">
+        <p>© 2025 Khonegi Catering. All rights reserved.</p>
+</footer>
+
+<!--Hampurilaisvalikon koodi--> 
+<script> //avaa tai sulkee hampurilaisvalikon, kun käyttäjä klikkaa kuvaketta
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+   
+</script>
 </body>
 </html>

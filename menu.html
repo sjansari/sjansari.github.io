@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>MENU</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<!-- Ulkoinen CSS-tiedosto -->
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome - kirjaston linkki -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body> 
+<!--Sivuston yläosa (header)-->
+<header class="site-header">
+         
+<div class= "container">
+<!-- Sivuston logo -->
+<img src="logo.jpeg" alt="Logo" class="logo">
+</div>
+<!-- Hampurilaisvalikon kuvake Font Awesomesta -->
+<div id="hamburger">
+<i class="fas fa-bars"></i>
+</div>
+                
+<nav id="nav-menu" class="nav-menu"> 
+    <ul>
+        <li><a href="index.html">Khonegi catering</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="yhteys.html">Yhteystiedot</a></li>
+    </ul>
+               
+</nav>
+</header>
+   
+<!--Sivun pääsisältö-->
+
+<h1 class="otsikko">KHONEGI MENU</h1> 
+
+<div  class="menu">
+
+<div class="menu-item"> 
+
+<img src="alkuruoka.jpeg" alt="Kuva alkuruoasta">
+
+
+<div class=" description">
+<h2>Alkuruoka</h2>
+    <ul>
+    <li>Kashkbademjon</li>
+    <li>Sambuseh</li>
+    <li>Soup</li>
+    <li>Salad</li>
+        
+</ul>
+</div>
+</div>
+
+
+<div class="menu-item">
+
+<img src="Pääruoka.jpeg" alt="Kuva Pääruoasta">
+
+
+<div class="description">
+<h2>Pääruoka</h2>
+    <ul>
+    <li>Kabab kobideh</li>
+    <li>Ghormesabzi</li>
+    <li>Zereshkpolo</li>
+    <li>Gheimeh</li>
+    </ul>
+</div>
+</div>
+
+<div class="menu-item">
+
+<img src="jälkiruoka.jpeg" alt="Kuva jälkuruoasta">
+
+
+<div class="description">
+<h2>Jälkiruoka</h2>
+    <ul>
+    <li>Bastani Sonnati</li>
+    <li>Falodeh Shirazi</li>
+    <li> Shirini Zabon</li>
+    <li>Napeloni</li>
+    </ul>
+</div>
+</div>
+</div>
+
+<!--Sivuston alatunnuiste (footer)-->
+
+<footer class="site-footer">
+    <p>© 2025 Khonegi Catering. All rights reserved.</p>
+</footer>
+
+<!--Hampurilaisvalikon koodi--> 
+<script> //avaa tai sulkee hampurilaisvalikon, kun käyttäjä klikkaa kuvaketta
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+</script>

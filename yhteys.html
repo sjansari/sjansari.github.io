@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>YHTEYSTIEDOT</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<!-- Ulkoinen CSS-tiedosto -->
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome - kirjaston linkki --> 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body> 
+<!--Sivuston yläosa (header)-->
+<header class="site-header">
+         
+<div class= "container">
+<!-- Sivuston logo -->
+<img src="logo.jpeg" alt="Logo" class="logo">
+</div>
+<!-- Hampurilaisvalikon kuvake Font Awesomesta -->
+<div id="hamburger">
+<i class="fas fa-bars"></i>
+</div>
+                
+<nav id="nav-menu" class="nav-menu"> 
+    <ul>
+    <li><a href="index.html">Khonegi catering</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="yhteys.html">Yhteystiedot</a></li>
+    </ul>
+               
+</nav>
+</header>
+
+<!--Sivun pääsisältö-->
+
+<h1 class="otsikko">KHONEGI CATREING</h1> 
+<main class="contact-page">
+
+<img src="yhteystietokuva.jpeg" alt="Kuva ruoasta">
+
+<div class="contact-info">
+    <h2>Yhteystiedot</h2>
+    <p><strong>Osoite:</strong> Esimerkkikatu 1 A, Espoo</p>
+    <p><strong>Puhelin:</strong> 044 012 3456 </p>
+    <P><strong>Sähköposti:</strong> info@Khonegi.fi</P>
+</div>
+</main>
+
+
+<!--Sivuston alatunnuiste (footer)-->
+
+<footer class="site-footer">
+        <p>© 2025 Khonegi Catering. All rights reserved.</p>
+</footer>
+
+<!--Hampurilaisvalikon koodi--> 
+<script> //avaa tai sulkee hampurilaisvalikon, kun käyttäjä klikkaa kuvaketta
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+       
+</script>
